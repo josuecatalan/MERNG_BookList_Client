@@ -8,14 +8,14 @@ import AddBook from './Components/AddBook';
 
 ///Apollo client setup
 const client = new ApolloClient({
-	uri: 'https://booklistservergraphql.herokuapp.com/'
+	uri: 'http://localhost:5000/'
 });
 
 const App = () => {
 	return (
 		<ApolloProvider client={client}>
 			<div id='main'>
-				<h1>Josh's Reading List</h1>
+				<h1>My Reading List</h1>
 				<BookList />
 				<AddBook />
 			</div>
